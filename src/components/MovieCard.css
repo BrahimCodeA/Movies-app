@@ -1,0 +1,99 @@
+.movie-card {
+    background-color: #FF4F47;
+    height: 200px;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.35);
+    position: relative;
+    transition: transform 0.3s;
+}
+.movie-card:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.95);
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.movie-title {
+    text-align: center;
+    color: #FF4F47;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.movie-categorie {
+    color: white;
+    margin-bottom: 60px;
+}
+.movie-name-categorie {
+    background-color: rgb(255, 115, 108);;
+    padding: 5px;
+    border-radius: 5px;
+}
+.rating-bar {
+    display: flex;
+    height: 15px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+  
+.rating-bar-like {
+    background-color: green;
+    height: 100%;
+}
+  
+.rating-bar-dislike {
+    background-color: red;
+    height: 100%;
+}
+  
+.movie-btn-delete {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    left: 10px;
+    color: red;
+    background-color: rgb(255, 134, 134);
+    height: 25px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icon-delete {
+    font-size: 20px;
+}
+.movie-btn-like {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    left: 125px;
+    background-color: white;
+    color: #FF4F47;
+    height: 25px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icon-like {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+/*-- MEDIA QUERY --- */
+
+@media (max-width:500px) {
+    .movie-btn-like {
+        font-size: 10px;
+    }
+    .movie-btn-delete {
+        font-size: 12px;
+    }
+}
